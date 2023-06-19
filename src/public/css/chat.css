@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F7F8F3;
+    color: #012C3D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #F7F8F3;
+}
+
+
+.title {
+    font-size: 3.8rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.chatbox {
+    display: flex;
+    justify-content: center;
+}
+
+.chatbox input {
+    height: 34px;
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #012C3D;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.messageLog {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.8rem;
+    margin-top: 50px;
+}
+
