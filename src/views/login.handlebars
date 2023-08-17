@@ -1,33 +1,14 @@
-<h1>Login</h1>
-
-<form action="" id="loginForm">
-  <label for="">Usuario</label>
-  <input type="email" name="email">
-
-  <label for="">Password</label>
-  <input type="password" name="password">
-
-  <button type="submit">Iniciar Sesión</button>
-</form>
-
 <div>
-  <button>
-       <a href="forgotPassword">Restaurar Contraseña</a>
-  </button>
-</div>
-
-
-<div>
-  <button> 
-     <a href="/auth/github">Entrar con Github</a>
-  </button>
- 
-</div>
-
-<div>
-  <button> 
-     <a href="/auth/google">Entrar con Google</a>
-  </button>
- 
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label>Email</label>
+        <input name="email">
+        <br>
+        <label>Password</label>
+        <input name="password" type="password">
+        <input type="submit">
+    </form>
+    <p><a href="/api/sessions/github">Login with GitHub</a></p>
+    <p>You don't have an account? <a href="/register">Sign up here!</a></p>
 </div>
 <script src="/js/login.js"></script>
