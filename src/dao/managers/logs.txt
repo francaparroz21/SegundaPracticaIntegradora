@@ -1,7 +1,0 @@
-Date: 17/8/2023 - Hour: 16:11:43 - Method: GET all products
-Date: 17/8/2023 - Hour: 16:12:35 - Method: Register
-Date: 17/8/2023 - Hour: 16:13:30 - Method: Login
-Date: 17/8/2023 - Hour: 16:16:46 - Method: Login
-Date: 17/8/2023 - Hour: 16:16:54 - Method: GET all products
-Date: 17/8/2023 - Hour: 16:21:47 - Method: GET all products
-Date: 17/8/2023 - Hour: 16:21:49 - Method: Login

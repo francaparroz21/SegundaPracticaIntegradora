@@ -1,22 +1,38 @@
-<h1>Signup</h1>
+<div class="container">
+    <div class="page-title">
+        <h1>¡Registrate!</h1>
+    </div>
 
-<form action="" id="signupForm">
-  <label for="">Nombre</label>
-  <input type="text" name="first_name">
+    <div class="form-container">
+        <form action="" id="signupForm">
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" name="first_name" required>
+            </div>
+            <div>
+                <label for="">Apellido</label>
+                <input type="text" name="last_name" required>
+            </div>
+            <div>
+                <label for="">Edad</label>
+                <input type="number" name="age" required>
+            </div>
+            <div>
+                <label for="">Correo electrónico</label>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label for="">Contraseña</label>
+                <input type="password" name="password" required>
+            </div>
 
-  <label for="">Apellido</label>
-  <input type="text" name="last_name">
-
-  <label for="">Edad</label>
-  <input type="number" name="age">
-
-  <label for="">Correo</label>
-  <input type="email" name="email">
-
-  <label for="">Password</label>
-  <input type="password" name="password">
-
-  <button type="submit">Crear Usuario</button>
-</form>
+            <button class="submitButton" type="submit">Registrarte</button>
+        </form>
+    </div>
+    <div class="foot">
+        <p class="p-info">¿Ya tenés una cuenta? Ingresá <a href="/login">aquí</a>.</p>
+    </div>
+</div>
 
 <script src="/js/signup.js"></script>
+

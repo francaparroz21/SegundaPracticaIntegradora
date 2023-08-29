@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
 app.use(cookieParser())
 
-dBconnect(); // MongoDB connection
+dBconnect(); 
 
 initializePassport();
 app.use(passport.initialize());

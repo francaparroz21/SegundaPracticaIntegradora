@@ -1,27 +1,28 @@
-const form = document.getElementById('signupForm')
+const form = document.querySelector("#signupForm");
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
+    e.preventDefault();
 
-  const data = new FormData(form)
-  const obj = {}
+    const data = new FormData(form);
+    const obj = {};
+    
+    data.forEach((value, key) => obj[key] = value);
 
-  data.forEach((value, key) => obj[key] = value)
-
-  
-   const url = '/users'
-   const headers = {
-     'Content-Type': 'application/json'
+    const url = '/api/users';
+    const headers = {
+        'Content-Type': 'application/json'
     }
-    const method = 'POST'
-    const body = JSON.stringify(obj)
+    const method = 'POST'; 
+    const body = JSON.stringify(obj);
+        
+    fetch(url, {
+        headers,
+        method,
+        body
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .then(() => {window.location.href = '/login'})
+    .catch(error => console.log(error))
 
-   fetch(url, {
-     headers,
-     method,
-     body
-   })
-     .then(response => response.json())
-     .then(data => console.log(data))
-     .catch(error => console.log(error))
 })
